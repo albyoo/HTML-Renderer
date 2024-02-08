@@ -8,7 +8,7 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: HtmlRenderer.Demo.Web.Api/publish
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 8.0.x
-  WORKING_DIRECTORY: HtmlRenderer.Demo.Web.Api
+  WORKING_DIRECTORY: Source/HtmlRenderer.Demo.Web.Api
 jobs:
   build:
     runs-on: ubuntu-latest
