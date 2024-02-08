@@ -1,0 +1,1338 @@
+﻿
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Mono", sans-serif;
+    }
+
+    h1 {
+        color: #121212;
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    h3.plot-title {
+        padding: 0;
+        margin: 0;
+    }
+
+    .secondary-plots h3.plot-title {
+        margin-top: 10px;
+    }
+
+    h2 {
+        color: #121212;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .header,
+    .section {
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        page-break-inside: avoid;
+    }
+
+    th,
+    td {
+        text-align: start;
+        font-size: 8pt;
+        vertical-align: central;
+        page-break-inside: avoid;
+    }
+
+    th {
+        font-weight: bold;
+        color: #5f5f5f;
+    }
+
+    .configuration {
+        width: auto;
+        white-space: nowrap;
+    }
+
+        .configuration th {
+            padding-right: 20px;
+        }
+
+    .header {
+        vertical-align: top;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .parameters th,
+    .settings th,
+    .alarms th {
+        padding-top: 5px;
+        line-height: 8pt;
+    }
+
+        .parameters th.title,
+        .settings th.title,
+        .alarms th.title {
+            padding-top: 0;
+        }
+
+    .alarms {
+        width: auto;
+    }
+
+        .alarms th,
+        .alarms td {
+            padding-right: 20px;
+            vertical-align: middle;
+        }
+
+            .alarms th.title,
+            .alarms td.title,
+            .alarms th.description,
+            .alarms td.description {
+                width: 225px;
+            }
+
+    .alarm-priority {
+        box-shadow: none;
+        border: none;
+    }
+
+        .alarm-priority .icon {
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .alarm-priority .low {
+            background-color: #FCDF01;
+        }
+
+        .alarm-priority .medium {
+            background-color: #FC8800;
+        }
+
+        .alarm-priority .high {
+            background-color: #FF0000;
+        }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pagebreak {
+        page-break-before: always;
+    }
+</style>
+
+
+<div class="header">
+    <table class="header">
+        <tr>
+            <td>
+
+
+                <h1>Patient Report PID-5678</h1>
+                <table class="configuration">
+                    <tr>
+                        <th>Controller</th>
+                        <td>BiVACOR-1234</td>
+                    </tr>
+                    <tr>
+                        <th>Date Range</th>
+                        <td>
+
+                            <span class="date-time">03:37 PM 7 Feb 2024</span>
+
+                            -
+                            <span class="date-time">03:37 PM 8 Feb 2024</span>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Timeframe</th>
+                        <td>
+                            <span class="duration">1d</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Generated</th>
+                        <td>
+                            <span class="date-time">03:37 PM 8 Feb 2024</span>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+            </td>
+            <td align="right" valign="top">
+                <img src="https://localhost:5001/images/logo.png" class="logo" width="60" height="60" />
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <table class="parameter-settings">
+        <tr style="vertical-align:top;">
+            <td>
+
+                <table class="parameters">
+                    <tr>
+                        <th class="title"><h2>Parameters</h2></th>
+                        <th>Mean</th>
+                        <th>Min</th>
+                        <th>Max</th>
+                    </tr>
+                    <tr>
+                        <td>Proin pretium Units</td>
+                        <td>24</td>
+                        <td>22</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Maecenas a metus Units</td>
+                        <td>17</td>
+                        <td>14</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Cras sapien Units</td>
+                        <td>15</td>
+                        <td>9</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>Maecenas eu dui Units</td>
+                        <td>26</td>
+                        <td>1</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Cras Units</td>
+                        <td>26</td>
+                        <td>25</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Curabitur nec Units</td>
+                        <td>21</td>
+                        <td>16</td>
+                        <td>29</td>
+                    </tr>
+                </table>
+
+            </td>
+            <td>
+
+
+                <table class="settings">
+                    <tr>
+                        <th class="title"><h2>Settings</h2></th>
+                        <th>Current</th>
+                        <th>Previous</th>
+                        <th>Last Changed</th>
+                    </tr>
+
+                    <tr>
+                        <td>Quisque gravida</td>
+                        <td>10 </td>
+                        <td>N/A</td>
+                        <td>Default</td>
+                    </tr>
+                    <tr>
+                        <td>Fusce semper cursus</td>
+                        <td>10 </td>
+                        <td>6</td>
+                        <td>08 Feb 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Fusce</td>
+                        <td>4 </td>
+                        <td>5</td>
+                        <td>08 Feb 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Etiam rhoncus</td>
+                        <td>7 </td>
+                        <td>N/A</td>
+                        <td>Default</td>
+                    </tr>
+                    <tr>
+                        <td>Aliquam eu neque</td>
+                        <td>8 </td>
+                        <td>N/A</td>
+                        <td>Default</td>
+                    </tr>
+                    <tr>
+                        <td>Curabitur nec volutpat</td>
+                        <td>9 </td>
+                        <td>N/A</td>
+                        <td>Default</td>
+                    </tr>
+                </table>
+
+
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+</div>
+
+<div class="section">
+
+
+    <table class="alarms">
+        <thead>
+            <tr>
+                <th class="title"><h2>Alarms</h2></th>
+                <th class="priority" width="70">Priority</th>
+                <th class="occurances">Occurances</th>
+            </tr>
+        </thead>
+        <tr>
+            <td class="description">In</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">2</td>
+        </tr>
+        <tr>
+            <td class="description">Sed laoreet commodo</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">2</td>
+        </tr>
+        <tr>
+            <td class="description">Nam auctor ultricies</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">3</td>
+        </tr>
+        <tr>
+            <td class="description">Ut vel</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">6</td>
+        </tr>
+        <tr>
+            <td class="description">Maecenas ultrices mauris</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">5</td>
+        </tr>
+        <tr>
+            <td class="description">Duis vehicula</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">4</td>
+        </tr>
+        <tr>
+            <td class="description">Aenean</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">10</td>
+        </tr>
+        <tr>
+            <td class="description">Quisque gravida vehicula</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">3</td>
+        </tr>
+        <tr>
+            <td class="description">Aliquam sagittis dui</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">3</td>
+        </tr>
+        <tr>
+            <td class="description">Aenean nec</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">6</td>
+        </tr>
+        <tr>
+            <td class="description">Nullam</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">10</td>
+        </tr>
+        <tr>
+            <td class="description">Nullam dapibus</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td class="occurances">1</td>
+        </tr>
+    </table>
+
+
+</div>
+
+
+<div class="pagebreak"></div>
+<div class="section">
+
+
+    <table class="settings">
+        <tr>
+            <th class="title"><h2>Settings</h2></th>
+            <th>Current</th>
+            <th>Previous</th>
+            <th>Last Changed</th>
+        </tr>
+
+        <tr>
+            <td>Quisque gravida</td>
+            <td>10 </td>
+            <td>N/A</td>
+            <td>Default</td>
+        </tr>
+        <tr>
+            <td>Fusce semper cursus</td>
+            <td>10 </td>
+            <td>6</td>
+            <td>08 Feb 2024</td>
+        </tr>
+        <tr>
+            <td>Fusce</td>
+            <td>4 </td>
+            <td>5</td>
+            <td>08 Feb 2024</td>
+        </tr>
+        <tr>
+            <td>Etiam rhoncus</td>
+            <td>7 </td>
+            <td>N/A</td>
+            <td>Default</td>
+        </tr>
+        <tr>
+            <td>Aliquam eu neque</td>
+            <td>8 </td>
+            <td>N/A</td>
+            <td>Default</td>
+        </tr>
+        <tr>
+            <td>Curabitur nec volutpat</td>
+            <td>9 </td>
+            <td>N/A</td>
+            <td>Default</td>
+        </tr>
+        <tr>
+            <td>Nam placerat ullamcorper</td>
+            <td>Off </td>
+            <td>N/A</td>
+            <td>Default</td>
+        </tr>
+        <tr>
+            <td>Etiam dignissim enim</td>
+            <td>7 </td>
+            <td>N/A</td>
+            <td>Default</td>
+        </tr>
+        <tr>
+            <td>Sed</td>
+            <td>2 </td>
+            <td>10</td>
+            <td>08 Feb 2024</td>
+        </tr>
+        <tr>
+            <td>Nunc eget</td>
+            <td>7 </td>
+            <td>N/A</td>
+            <td>Default</td>
+        </tr>
+    </table>
+
+
+</div>
+
+<div class="section">
+    <h2>Alarms</h2>
+    <table class="alarms">
+        <thead>
+            <tr>
+                <th class="time">Timestamp</th>
+                <th class="priority" width="70">Priority</th>
+                <th class="description">Description</th>
+            </tr>
+        </thead>
+        <tr>
+            <td width="120">8/02/2024 3:21:14 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Sed laoreet commodo</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:21:39 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Aliquam sagittis dui</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:21:54 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Duis vehicula</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:22:07 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Aliquam sagittis dui</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:22:57 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Aenean nec</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:23:01 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:23:05 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Nam auctor ultricies</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:23:17 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:23:31 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Duis vehicula</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:23:34 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Ut vel</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:25:28 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:25:42 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:25:55 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Ut vel</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:04 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Quisque gravida vehicula</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:14 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam dapibus</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:22 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Nam auctor ultricies</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:25 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Ut vel</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:43 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>In</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:49 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Aenean nec</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:52 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:54 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:58 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Sed laoreet commodo</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:26:58 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:27:32 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Ut vel</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:27:38 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:27:39 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Nam auctor ultricies</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:27:55 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Ut vel</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:28:16 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:28:25 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Quisque gravida vehicula</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:28:25 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:28:41 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:28:51 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:29:04 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Maecenas ultrices mauris</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:30:40 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:31:07 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Aenean nec</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:31:35 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Quisque gravida vehicula</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:32:27 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:32:27 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:32:57 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:33:17 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Maecenas ultrices mauris</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:33:22 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Aenean nec</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:33:31 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Maecenas ultrices mauris</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:33:45 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Duis vehicula</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:34:03 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:34:15 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:34:32 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Ut vel</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:34:37 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Maecenas ultrices mauris</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:34:57 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon medium"></div>
+                    <span>Medium</span>
+                </div>
+
+
+            </td>
+            <td>Aenean</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:35:56 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Maecenas ultrices mauris</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:35:59 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>In</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:36:01 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Aliquam sagittis dui</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:36:05 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Aenean nec</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:36:10 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Nullam</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:36:38 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon high"></div>
+                    <span>High</span>
+                </div>
+
+
+            </td>
+            <td>Duis vehicula</td>
+        </tr>
+        <tr>
+            <td width="120">8/02/2024 3:37:02 PM</td>
+            <td class="priority">
+
+
+                <div class="alarm-priority" width="70">
+                    <div class="icon low"></div>
+                    <span>Low</span>
+                </div>
+
+
+            </td>
+            <td>Aenean nec</td>
+        </tr>
+    </table>
+</div>
+
