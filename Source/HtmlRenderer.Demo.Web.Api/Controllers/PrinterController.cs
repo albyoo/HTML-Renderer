@@ -19,6 +19,11 @@ namespace HtmlRenderer.Demo.Web.Api.Controllers
                 .Select(s => s.Name);
         }
 
+        [HttpGet("FontNames")]
+        public IEnumerable<string> GetFontNames() {
+            return SkiaSharp.SKFontManager.Default.GetFontFamilies();
+        }
+
         [HttpGet("Print")]
         public async Task<IActionResult> PrintSkia(string name)
         {
