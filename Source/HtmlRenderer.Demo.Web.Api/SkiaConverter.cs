@@ -13,14 +13,15 @@ namespace HtmlRenderer.Demo.Web.Api
     {
         public async Task<Stream> GenerateSampleAsync(HtmlSample sample)
         {
+            var margins = PdfGenerateConfig.MilimitersToUnits(18f, 15f);
+
             var config = new PdfGenerateConfig();
-
             config.PageSize = PageSize.A4;
-
-            config.MarginLeft = 0;
-            config.MarginRight = 0;
-            config.MarginTop = 0;
-            config.MarginBottom = 0;
+            config.PageOrientation = PageOrientation.Portrait;
+            config.MarginLeft = (int)margins.Width;
+            config.MarginRight = (int)margins.Width;
+            config.MarginTop = (int)margins.Height;
+            config.MarginBottom = (int)margins.Height;
 
             var stream = new MemoryStream();
             await PdfGenerator.GeneratePdfAsync(sample.Html, stream, config, imageLoad: OnImageLoaded);
